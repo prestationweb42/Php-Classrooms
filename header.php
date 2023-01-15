@@ -1,6 +1,6 @@
 <?php
-    include_once('variables.php');
-    include_once('functions.php');
+include_once('variables.php');
+include_once('functions.php');
 ?>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,7 +18,7 @@
           <a class="nav-link" href="contact.php">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.php">P3C2</a>
+          <a class="nav-link" href="https://github.com/OpenClassrooms-Student-Center/Concevez-votre-site-web-avec-PHP-MySQL" target="_blank">P3C2</a>
         </li>
       </ul>
     </div>
