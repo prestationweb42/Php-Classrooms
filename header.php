@@ -20,6 +20,9 @@ include_once('functions.php');
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/OpenClassrooms-Student-Center/Concevez-votre-site-web-avec-PHP-MySQL" target="_blank">P3C2</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="<?php session_destroy() ?>">Deconnexion</a>
+        </li>
       </ul>
     </div>
   </div>
