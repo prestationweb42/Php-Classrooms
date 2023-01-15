@@ -25,7 +25,7 @@
                 <label for="message" class="form-label">Votre message</label>
                 <textarea class="form-control" placeholder="Exprimez vous" id="message" name="message" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button type="submit" class="btn btn-warning">Envoyer</button>
         </form>
         <br />
     </div>
