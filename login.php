@@ -8,7 +8,8 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
             $user['email'] === $_POST['email'] &&
             $user['password'] === $_POST['password']
         ) {
-            // Enregistrement de l'email dans en session
+            // Enregistrement de l'email de l'utilisateur en session
+            $_SESSION['LOGGED_USER'] = $user['email'];
             $loggedUser = [
                 'email' => $user['email'],
             ];
@@ -26,7 +27,7 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
 <!--
    Si utilisateur/trice est non identifié(e), on affiche le formulaire
 -->
-<?php if (!isset($loggedUser)) : ?>
+<?php if (!isset($_SESSION['LOGGED_USER'])) : ?>
     <form action="home.php" method="post">
         <!-- si message d'erreur on l'affiche -->
         <?php if (isset($errorMessage)) : ?>
@@ -50,6 +51,6 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
 -->
 <?php else : ?>
     <div class="alert alert-success" role="alert">
-        Bonjour <?php echo $loggedUser['email']; ?> et bienvenue sur le site !
+        Bonjour <?php echo $_SESSION['loggedUser']; ?> et bienvenue sur le site !
     </div>
 <?php endif; ?>

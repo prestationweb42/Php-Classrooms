@@ -2,12 +2,6 @@
 
 $users = [
     [
-        'full_name' => 'Dan Vent',
-        'email' => 'dan.vent@orange.net',
-        'age' => 57,
-        'password' => 'password',
-    ],
-    [
         'full_name' => 'Mickaël Andrieu',
         'email' => 'mickael.andrieu@exemple.com',
         'age' => 34,
