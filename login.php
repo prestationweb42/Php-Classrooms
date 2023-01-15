@@ -51,6 +51,6 @@ if (isset($_POST['email']) &&  isset($_POST['password'])) {
 -->
 <?php else : ?>
     <div class="alert alert-success" role="alert">
-        Bonjour <?php echo $_SESSION['loggedUser']; ?> et bienvenue sur le site !
+        Bonjour <?php echo $_SESSION['LOGGED_USER']; ?> et bienvenue sur le site !
     </div>
 <?php endif; ?>
