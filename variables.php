@@ -3,7 +3,7 @@
 $users = [
     [
         'full_name' => 'Dan Vent',
-        'email' => 'dan.vent@laposte.net',
+        'email' => 'dan.vent@orange.net',
         'age' => 57,
         'password' => 'password',
     ],

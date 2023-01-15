@@ -3,10 +3,12 @@
 // Validation du formulaire
 if (isset($_POST['email']) &&  isset($_POST['password'])) {
     foreach ($users as $user) {
+        // utilisateur identifié
         if (
             $user['email'] === $_POST['email'] &&
             $user['password'] === $_POST['password']
         ) {
+            // Enregistrement de l'email dans en session
             $loggedUser = [
                 'email' => $user['email'],
             ];
