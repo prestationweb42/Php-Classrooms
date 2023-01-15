@@ -2,6 +2,11 @@
 
 $users = [
     [
+        'full_name' => 'Dan Vent',
+        'email' => 'dan.vent@laposte.net',
+        'age' => 57,
+    ],
+    [
         'full_name' => 'Mickaël Andrieu',
         'email' => 'mickael.andrieu@exemple.com',
         'age' => 34,
@@ -45,7 +50,7 @@ $recipes = [
     ],
 ];
 
-if(isset($_GET['limit']) && is_numeric($_GET['limit'])) {
+if (isset($_GET['limit']) && is_numeric($_GET['limit'])) {
     $limit = (int) $_GET['limit'];
 } else {
     $limit = 100;
