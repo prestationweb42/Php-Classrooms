@@ -16,6 +16,9 @@
         <!-- Inclusion de la navigation -->
         <?php include_once('header.php'); ?>
 
+        <!-- test cookie -->
+        <?php include_once('cookie.php'); ?>
+
         <!-- Inclusion du formulaire de connexion -->
         <?php include_once('login.php'); ?>
         <h1>Site de Recettes !</h1>
