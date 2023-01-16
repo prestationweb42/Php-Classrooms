@@ -19,6 +19,10 @@
         <!-- test cookie -->
         <?php include_once('cookie.php'); ?>
 
+        <!-- Connexion à la BDD -->
+        <?php include_once('connexion.php'); ?>
+
+
         <!-- Inclusion du formulaire de connexion -->
         <?php include_once('login.php'); ?>
         <h1>Site de Recettes !</h1>
