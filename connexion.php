@@ -4,8 +4,8 @@
  * Connexion à la BDD
  */
 try {
-    $db = new PDO('mysql:host=localhost;dbname=recipes;charset=utf8', 'root', 'root');
-    echo 'Connexion établie';
+    $db = new PDO('mysql:host=localhost;dbname=recipes;charset=utf8', 'root', 'root', [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+    echo '<p>Connexion établie</p>';
 } catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 }

@@ -1,0 +1,14 @@
+// Commande SQL pour les Jointures //
+SELECT users.full_name, comments.comment FROM users 
+INNER JOIN comments
+ON users.user_Id = comments.user_id
+
+//
+SELECT users.full_name, comments.comment FROM users 
+LEFT JOIN comments
+ON users.user_Id = comments.user_id
+
+//
+SELECT users.full_name, comments.comment FROM users 
+LEFT JOIN comments
+ON users.user_Id = comments.user_id
